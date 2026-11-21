@@ -1,0 +1,22 @@
+{
+  "id": "3765401686",
+  "name": "monster-rat",
+  "title": "[PILL PACK] Monster Rat",
+  "author": "Nick Vogel",
+  "status": "extracted_verified",
+  "acquisition": "existing_steam_client_installation",
+  "steamcmd_download_completed": false,
+  "source_workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3765401686",
+  "source_archive_sha256": "c8ced88525dd57b03dc537d14e5e5d5159441fe85ec34138667851b9141a34be",
+  "gma_header": {
+    "title": "[PILL PACK] Monster Rat",
+    "description": "{\"title\":\"[PILL PACK] Monster Rat\",\"type\":\"entity\",\"tags\":[\"movie\",\"realism\",\"fun\"],\"ignore\":[\"ogg\"]}",
+    "author": "Author Name",
+    "steam_id": "0",
+    "timestamp": 1787095174
+  },
+  "files": 149,
+  "payload_bytes": 139528235,
+  "roundtrip_verified": true,
+  "packaging_exclusions": []
+}

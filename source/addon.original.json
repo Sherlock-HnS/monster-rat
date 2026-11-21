@@ -1,0 +1,12 @@
+{
+  "title": "[PILL PACK] Monster Rat",
+  "type": "entity",
+  "tags": [
+    "movie",
+    "realism",
+    "fun"
+  ],
+  "ignore": [
+    "ogg"
+  ]
+}

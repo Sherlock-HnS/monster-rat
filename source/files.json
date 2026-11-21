@@ -1,0 +1,896 @@
+[
+  {
+    "path": "lua/autorun/gennytoi_pillrat_fnac.lua",
+    "size": 66585,
+    "crc": 1648700719,
+    "sha256": "ddcf9fe7384f8341963626f2c434f061f95537e28b3274226039c44c5f8ee809"
+  },
+  {
+    "path": "lua/autorun/include/gennytoi_pillrat_fnac.lua",
+    "size": 67156,
+    "crc": 2018341619,
+    "sha256": "839aa86ae962c4c41380ace710cb956e5f6e48cb4cec07db5e74c93750093d14"
+  },
+  {
+    "path": "materials/gentoi/rat/fnaf3icon.png",
+    "size": 188593,
+    "crc": 623065189,
+    "sha256": "94aa6f4e949d239236d9204e5cd961a8161f7132f3e4c05121e2a2ed1816b082"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_01_delay-0.07s.png",
+    "size": 33816,
+    "crc": 2556412545,
+    "sha256": "45220805f213a89817204f8e98e32aa42e6210815908321f279791ea59b06767"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_03_delay-0.07s.png",
+    "size": 33525,
+    "crc": 1946364914,
+    "sha256": "32d6792b28f8a19f42ad822ab15bee2a89bd87ff5893b8dddb3a03c7409329a6"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_04_delay-0.07s.png",
+    "size": 34786,
+    "crc": 745207910,
+    "sha256": "ff9fc0257dae89b3789c65e0526d141603edd6b24edf4419cfbf3e1ce8e32fec"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_00_delay-0.07s.png",
+    "size": 28768,
+    "crc": 2462607517,
+    "sha256": "9b1905dc6466d970e9ed6c41170265a79ba041d4fdacbcc5196c01033bd1acf3"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_02_delay-0.07s.png",
+    "size": 32480,
+    "crc": 31340923,
+    "sha256": "771a44fd14e4192a51e1cbae1b5f862d2deb59d199e4184c0863a51a14181740"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_11_delay-0.07s.png",
+    "size": 34218,
+    "crc": 149784206,
+    "sha256": "a0aac72a9fc5ac0568ef99985a4a363fa86c952d666ee15b7a9d6110342631c2"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_05_delay-0.07s.png",
+    "size": 33889,
+    "crc": 1712147796,
+    "sha256": "2b380e9d7a1cfc85870f9b2c07ec63027d68e368fbc2b91eab16199a54ac1ad9"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_08_delay-0.07s.png",
+    "size": 33962,
+    "crc": 85121197,
+    "sha256": "e09501298762c7e464b14f6ebc58640f55b8a695c75107f2904ba77dea257230"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_06_delay-0.07s.png",
+    "size": 33929,
+    "crc": 1099010198,
+    "sha256": "27bf2135e2d81ad8c2c8158133462bf0a0147ccb45d03976d226a7944381c8c3"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_07_delay-0.07s.png",
+    "size": 33501,
+    "crc": 3456642638,
+    "sha256": "75eee1ffa40edee42e2e5f5bea8c7d17fa7cbb6c3e5f9389443c317c33430673"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_10_delay-0.07s.png",
+    "size": 33353,
+    "crc": 2426224985,
+    "sha256": "90079e376ea2a28772c20b2c85fb3ad5f3283cf458b27243796f29ed67e4f2ae"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_09_delay-0.07s.png",
+    "size": 34861,
+    "crc": 1279614169,
+    "sha256": "cb95cbf2ce0557df969efdc87fc115d73bfe727163e41039fcf19871d69ce05f"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_18_delay-0.07s.png",
+    "size": 43108,
+    "crc": 1881076915,
+    "sha256": "ff299a1fde3841f1d38f328a3f578a5b60ac77dc5becb6ef076e8bc0b9a7d8ea"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_13_delay-0.07s.png",
+    "size": 39792,
+    "crc": 3555111455,
+    "sha256": "ea6f347a5f96ad7496add2357d79ca60a20ded7565dd52a784d2dc766668f1ae"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_14_delay-0.07s.png",
+    "size": 34957,
+    "crc": 347802730,
+    "sha256": "9407ef20bd1711e3f6083a8686792963232d20806e07f2d658f78e8e40f85155"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_15_delay-0.07s.png",
+    "size": 41606,
+    "crc": 445399915,
+    "sha256": "fcc14e618f8252113c0b93d4d58a48fe2be3fa0154b03fa98fc444ded29b9ae9"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_12_delay-0.07s.png",
+    "size": 35328,
+    "crc": 3012666486,
+    "sha256": "aff612a853dee91363a8f1557d514b6074ae2e0eec063d46eb1bc63801b1db1c"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_17_delay-0.07s.png",
+    "size": 42075,
+    "crc": 2356154088,
+    "sha256": "ca5b6167962e9a01793a1fbf28384ea82fe75e169a497033349aceac12cb4bef"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_16_delay-0.07s.png",
+    "size": 34843,
+    "crc": 3134816085,
+    "sha256": "23d1a1fb2c9b4a04cfb4d0b8cde5b1ed9a00a762ae0ebd2180456ddba82cd6eb"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_19_delay-0.07s.png",
+    "size": 35097,
+    "crc": 2452767044,
+    "sha256": "aeffc4b355f7802d5912e8711f2ca44f4d112809ad4c4a38e1d7d5561c402a8e"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_25_delay-0.07s.png",
+    "size": 35433,
+    "crc": 3709491159,
+    "sha256": "708e26714b0dd8cdb3c4878583f62349970444f895bdb7e0201d37cd26f4447c"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_26_delay-0.07s.png",
+    "size": 38940,
+    "crc": 1098427219,
+    "sha256": "664139dc706ef8e42856c1e3d574448b78df13463f2e1aee711c92ce89b0b4d8"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_20_delay-0.07s.png",
+    "size": 42431,
+    "crc": 4008434393,
+    "sha256": "810c5aa7d74cc13adcd6633c9075c1d8bce4611059ffa4e28ac1c9a1a30a2dd9"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_21_delay-0.07s.png",
+    "size": 36084,
+    "crc": 2525678242,
+    "sha256": "7ce4794f1ab34d61b6d14cb8600b86fd898611370337a45807ad6d66156c8781"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_23_delay-0.07s.png",
+    "size": 43653,
+    "crc": 376688432,
+    "sha256": "e8a788818eefc214f8aa93aeb9fdfbc57d82c351b5b567ff3e1a5b5ae559330d"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_24_delay-0.07s.png",
+    "size": 34311,
+    "crc": 3585814052,
+    "sha256": "fdcae6c8060d18e8b304be8a46a368c7cd7556ca2fb78f1d4f11c5b6d4aa5479"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_22_delay-0.07s.png",
+    "size": 42089,
+    "crc": 2510391449,
+    "sha256": "afc19790a6fbccf9f45ea9931f88b60f97974a8f58ddf4601c6e4333d3d7dcb2"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_28_delay-0.07s.png",
+    "size": 35262,
+    "crc": 2511132716,
+    "sha256": "dc76b2d7bb1dc8b7c7e0fc536fa22d2f101265974da50bfb560a077449908acb"
+  },
+  {
+    "path": "materials/gentoi/rat/icone.png",
+    "size": 17457,
+    "crc": 2853245433,
+    "sha256": "1ccb9e5ae10fa072e0bb7c504034b8252093603929167927bfb72b3728d94589"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_27_delay-0.07s.png",
+    "size": 37081,
+    "crc": 73397802,
+    "sha256": "ce2e264f0f76df1b801fac493de6d16d97f0e669c62a312d41691ac9c549915b"
+  },
+  {
+    "path": "materials/gentoi/rat/frames/frame_29_delay-0.07s.png",
+    "size": 35584,
+    "crc": 3212822030,
+    "sha256": "59105b81658925930c1a77a4ab7172b2b77612cb57121a92cd63500978d57843"
+  },
+  {
+    "path": "materials/gentoi/rat/mask2.png",
+    "size": 752551,
+    "crc": 3548526088,
+    "sha256": "b20f147031eacb765f2630cdbcb1531741b6c8805773749f5c59f9137ddfd601"
+  },
+  {
+    "path": "materials/gentoi/rat/monsterraticonui.png",
+    "size": 979424,
+    "crc": 511191797,
+    "sha256": "c42398a5d867963e8b4c2c59b0b8618b1b8f0a1b659158bd98ae50218660906c"
+  },
+  {
+    "path": "materials/gentoi/rat/monsterratabilityiconui.png",
+    "size": 70555,
+    "crc": 3422470240,
+    "sha256": "0d6c87bb7e87934b0832a62c846c7fad2e0e3093bbbaef048baf047c5b7a1f7b"
+  },
+  {
+    "path": "materials/gentoi/rat/monsterratbg.png",
+    "size": 1000960,
+    "crc": 2929800193,
+    "sha256": "4c8d3dafd5ed57d7b555154292a2f1bfae6e63af55020fd8ee4be97470992b6e"
+  },
+  {
+    "path": "materials/gentoi/rat/monsterratabilityinfoui.png",
+    "size": 177744,
+    "crc": 645760651,
+    "sha256": "dc88478c603f3151e5ac62fd6ed44349655f1217940b992384e58843c5dd618e"
+  },
+  {
+    "path": "materials/gentoi/rat/monsterrattextui.png",
+    "size": 46934,
+    "crc": 869595334,
+    "sha256": "d1899832e6902f0ccdd89907613613cd91cf3bcb0eb1612e18d7e5bb0f92ca83"
+  },
+  {
+    "path": "materials/gentoi/rat/ratabil1.png",
+    "size": 299600,
+    "crc": 1715071574,
+    "sha256": "98d5cf71879535bbe219fe94808bfa7f3ac0ea679d10e71ebc218e862b09ebe6"
+  },
+  {
+    "path": "materials/gentoi/rat/shadowraticongmod.png",
+    "size": 523251,
+    "crc": 4242774384,
+    "sha256": "58064634b55d9240fa05d40febcfffdaa7fd682b85a0d682d20ef4e39385a2c2"
+  },
+  {
+    "path": "materials/gentoi/rat/ratscreen1_edit_test.png",
+    "size": 1403804,
+    "crc": 1805417147,
+    "sha256": "9e23f1d86915f22a0e3f3cee65f596295f3ffa40218e079e346d1ea58c63c427"
+  },
+  {
+    "path": "materials/gentoi/rat/raticongmod.png",
+    "size": 711780,
+    "crc": 2134336592,
+    "sha256": "381576dc2117781c2972001dff6e2c8afcaf669a566db34d130b13540b8cda7e"
+  },
+  {
+    "path": "materials/gentoi/rat/ratabil1shadow.png",
+    "size": 175898,
+    "crc": 3775335141,
+    "sha256": "ddb813a9c23767c6dd82ed9058635562cef3c043971e7da45335d0a20a6525de"
+  },
+  {
+    "path": "materials/gentoi/rat/ratscreen.png",
+    "size": 1403804,
+    "crc": 1805417147,
+    "sha256": "9e23f1d86915f22a0e3f3cee65f596295f3ffa40218e079e346d1ea58c63c427"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/endo_s.vtf",
+    "size": 2796424,
+    "crc": 3655616799,
+    "sha256": "599d1360e1ad5af40b6ed75efda1691950fa5d317e6467481fe5d99561c5333c"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/endodark_d.vtf",
+    "size": 2796424,
+    "crc": 503970521,
+    "sha256": "1124e841c41f06047120914e4ef36bfcbaae5192ec227cb8ae6a2e3bd6762978"
+  },
+  {
+    "path": "materials/gentoi/rat/ratscreenshadow_edit_test.png",
+    "size": 1931043,
+    "crc": 55923354,
+    "sha256": "a0a0d05c60e3681e9d55f9732af681cae99b0c3e0adbbd3bbda56bf8c34ae0d1"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/endodark_s.vtf",
+    "size": 2796424,
+    "crc": 2736548512,
+    "sha256": "e344944b5d8e356fae4350627f1bdabd3f5deea88641fe337a967f660b3f3e8c"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/eyes_de.vtf",
+    "size": 699272,
+    "crc": 3071268980,
+    "sha256": "84ec92c523b539856b2b2fb9f20f301b7263772ffa3170330a4914060028c571"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr endo.vmt",
+    "size": 588,
+    "crc": 735776781,
+    "sha256": "2e883d53079b5bc9038828144075cf634678f5dd85f7e3abf1c9404d603353d3"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/endo_d.vtf",
+    "size": 2796424,
+    "crc": 1735024688,
+    "sha256": "204d6bcb859f61aaaa9a1964faf3650918c79148ce34cf158d7175d53b2df8b9"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/eyesdark_de.vtf",
+    "size": 699272,
+    "crc": 1560256050,
+    "sha256": "cb6eaa881b6d32ba7c24098aca084001c8d354fd138c1c72ed4ddc0e4627e2f0"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mainbasedark_s.vtf",
+    "size": 2796424,
+    "crc": 389327925,
+    "sha256": "8e60eefcd40d86e434bc595c7c49760afec0068d9ce251f9ea7266e51a80f58c"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mainbasedark_n.vtf",
+    "size": 5592640,
+    "crc": 3830571649,
+    "sha256": "793f318ccefce177948012841803710e715b2c54ad400876001fcec10114986e"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/endo_n.vtf",
+    "size": 5592640,
+    "crc": 3972793655,
+    "sha256": "ec3f795c21e7d5ab5c74b1fe8930676c20d47ccdfab7f0feae8685f6e14ee380"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mainbasedark_d.vtf",
+    "size": 2796424,
+    "crc": 275818338,
+    "sha256": "ab99a71b90a8f8cf4ee06e42ea779832ef0920274019d61a593efc688be19a5a"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr main.vmt",
+    "size": 599,
+    "crc": 4041140781,
+    "sha256": "f7dfae76325869a08fa4396d6d7d9ef25c14e1e52c4323c6799a9afe1bd3b611"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr eyes_base_color_shadow.vtf",
+    "size": 699288,
+    "crc": 1836774265,
+    "sha256": "281c1ec7f096e733deb3e730ce71be817de7c1ef8eb7d4f3c6bd5d0264935572"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr eyes_base_color.vtf",
+    "size": 699288,
+    "crc": 3754305676,
+    "sha256": "952a9fb789aa4185f722164579173592bd1b38164024d87268e146512a669355"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr endo_normal_directx.vtf",
+    "size": 699288,
+    "crc": 1937424124,
+    "sha256": "ecc1cdf13ff0edfa9837dd9d4295d77bb6adb64244e424685ebbb8ea8f0ef94e"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr stitches.vmt",
+    "size": 600,
+    "crc": 1033045888,
+    "sha256": "208f8aa4f72ea9b07c18b63cc11c21163d1b4c038598d536a968447979313ae4"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mainbase_d.vtf",
+    "size": 2796424,
+    "crc": 1831570280,
+    "sha256": "e2ad74f7f30e033f2869bed9d09f3b6f998b4c6c11b5280fe54e826223355f9a"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr endo_base_color.vtf",
+    "size": 2796440,
+    "crc": 212868536,
+    "sha256": "158049aa5bd607dcaaf4dabc15ee101d22b2d3317233a36840059b35a7238ea8"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mainbase_s.vtf",
+    "size": 2796424,
+    "crc": 3240010832,
+    "sha256": "64954f64ac42ed69af23a93474190f45548edbe4509d887543b7fdca1d4c577e"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr tail.vmt",
+    "size": 588,
+    "crc": 3577119770,
+    "sha256": "3a14039f11607723e5876dd8e796a457e11d092bb5d7eefa0c4becdedac8bd64"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr main_normal_directx.vtf",
+    "size": 699288,
+    "crc": 1593709452,
+    "sha256": "83d0496c1cc32ce9e8288fcd64c700cdbfaf373b6508f410c9bbbf2c8f861505"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr stitches_base_color.vtf",
+    "size": 699288,
+    "crc": 3003765204,
+    "sha256": "b8d1a0a4bab39d900796df75eb3396d913c1ca7e00bd9713336205901e813eef"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr eyes.vmt",
+    "size": 89,
+    "crc": 4003979570,
+    "sha256": "da3d48b003d797e2924b4694c7e6e9a11ad350a37c6971ff7aef9bdfca750348"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr teeth.vmt",
+    "size": 593,
+    "crc": 2058006541,
+    "sha256": "cae422e6a762df36ba83974f48e17c0b219fe12ade7f07f8d1efd0037cf281a0"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mainbase_n.vtf",
+    "size": 5592640,
+    "crc": 4059786060,
+    "sha256": "19e969e2d21e33f126f3a08561d53a9bc35042286402c81b22c6b8dd74022131"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr stitches_normal_directx.vtf",
+    "size": 699288,
+    "crc": 273860798,
+    "sha256": "25b2cc8dac7706da3c32284e7eadb6f224e278ccca4e6fbc1b469a4b3268093f"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr endo_base_color_shadow.vtf",
+    "size": 699288,
+    "crc": 2676209829,
+    "sha256": "66721feb4f260743642a4eeb370c52c844ce0e3a95d799b14c0ac4c8cee633f8"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr whiskers.vmt",
+    "size": 125,
+    "crc": 1638662719,
+    "sha256": "6123d4a8eaa4903f7ece4ff9ecf43a5de4a0dd3fb550b623b41e596f38ceb911"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/shadow endo.vmt",
+    "size": 596,
+    "crc": 1024400980,
+    "sha256": "e4f3c00f6bb3177116d5251fec570a50c409417bcd1f5dbb7a43533cf33a7da4"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr main_base_color.vtf",
+    "size": 699288,
+    "crc": 4237618426,
+    "sha256": "608b423752047eeee12e388faa266d05d6b271992b679fad652c9d7ab4c300bc"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/shadow eyes.vmt",
+    "size": 93,
+    "crc": 1715411592,
+    "sha256": "2074737e2344b989637e2ff18f5296209f0f49428782cf5f7260ae97b2601dbd"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr main_base_color_shadow.vtf",
+    "size": 2796440,
+    "crc": 1334183604,
+    "sha256": "7061c5c850fdcb5d2d95ab0f08d42709cc4e2ae424fbd64cb5c8f826a63f3632"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/shadow tail.vmt",
+    "size": 600,
+    "crc": 1660269537,
+    "sha256": "f3cc9c9f4e94c75276d7916e1added65b6294409450c96bbf24bf4ad5481a652"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr teeth_base_color_shadow.vtf",
+    "size": 699288,
+    "crc": 186122599,
+    "sha256": "e5a8cff918ed3547b421e4dee11c3179f0b210e83efb99749f0edf4ed303dc3d"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/shadow stitches.vmt",
+    "size": 608,
+    "crc": 878956660,
+    "sha256": "2527afad15db6cc99cbb2130ca2c25cb8385b0908fd704a333d55aedb8ccbbf9"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr teeth_normal_directx.vtf",
+    "size": 699288,
+    "crc": 348767492,
+    "sha256": "5c55e0348395dbaba84fc9e045ce1162434d4378b8c2d766ab26415d608f990f"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/shadow teeth.vmt",
+    "size": 750,
+    "crc": 519956264,
+    "sha256": "cf87cda576d4ce74e0fcbf345b5024fcab47223a461e45a212bd13cf312057f7"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr tail_base_color_shadow.vtf",
+    "size": 2796440,
+    "crc": 1746012338,
+    "sha256": "66c170c6309d6b5908f8edcbf3a0f21b6e28747cc89da6308048290d6ff1a471"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr stitches_base_color_shadow.vtf",
+    "size": 2796440,
+    "crc": 888284060,
+    "sha256": "b90a3f5b3490c857413c94925ad532cd506f20708413fe2d2a327f51da7637bf"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/stitchdark_s.vtf",
+    "size": 699272,
+    "crc": 2455002945,
+    "sha256": "68a304c7de25a63b1b564ee0822019c10da6cb4956961c88ed025e1c607c7ba9"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr tail_base_color.vtf",
+    "size": 699288,
+    "crc": 1724818,
+    "sha256": "6ec7191dd097247317f8f0a9fac837e8372b9999117ff584e07b3f33b0257442"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr tail_normal_directx.vtf",
+    "size": 699288,
+    "crc": 3518818614,
+    "sha256": "dfa8379e1f5ccbb2132034618243edf57720baf4e74bfe5e32e1376c0385ef68"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/shadow main.vmt",
+    "size": 612,
+    "crc": 2115058771,
+    "sha256": "dac8f6876533ea0138d3a8eff11482a7d3a0f9eaec7800b29d743356f69c76ff"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/stitches_s.vtf",
+    "size": 699272,
+    "crc": 1990910609,
+    "sha256": "ce8ce8ab258e387c23ce5417da111a6abdfab30db1f86bac2f3139865d1bff50"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/stitches_n.vtf",
+    "size": 1398336,
+    "crc": 2167357078,
+    "sha256": "128ab3dd1c957bebcf33e9bd5352ec74c9875d51de415fd5c2815c5c3c2896b8"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/mr teeth_base_color.vtf",
+    "size": 2796440,
+    "crc": 1956338982,
+    "sha256": "316081d192b6394e1e34528e94a333671fcbff48efd13edd7edecdeafd04f534"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/taildark_s.vtf",
+    "size": 699272,
+    "crc": 836946190,
+    "sha256": "5484eae5cffdb27dac197d07b9b571401418a064d60a31b73db0ccab208f6cee"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/taildark_d.vtf",
+    "size": 2796424,
+    "crc": 3610554180,
+    "sha256": "0c5043fb1747e6dc975ea7e19e9e60ba1c3eae586ed3005f988f484b8d9ceb10"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/tail_s.vtf",
+    "size": 699272,
+    "crc": 2144169939,
+    "sha256": "1db6252ef607cbcbb41aed437ddd830064434a57c545ce43ce39995c6169a77b"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/tail_d.vtf",
+    "size": 2796424,
+    "crc": 2128456734,
+    "sha256": "d155b3b2278295bb14b12e8a581724e8bd9d56105f59c16e1e331da87d635919"
+  },
+  {
+    "path": "materials/pills/pill_gentoi_fnac_rat.png",
+    "size": 453584,
+    "crc": 1840646630,
+    "sha256": "10a65879a5ab51156d8c74cb4edd58e69a47093fdaa4ae4f1d6c9c65e54b6687"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/taildark_n.vtf",
+    "size": 5592640,
+    "crc": 1414610395,
+    "sha256": "cdf4da83d9c3ac76abebd6be9126ecaa51bdf631d8ac8172b7c15208a640ea40"
+  },
+  {
+    "path": "materials/pills/pill_gentoi_fnac_rat_old.png",
+    "size": 25852,
+    "crc": 3453803466,
+    "sha256": "55d97564195bbc86d81fce810ee239c5e3c4d05fa6f4e1ecb2ef33375971d11d"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/teethdark_e.vtf",
+    "size": 2796424,
+    "crc": 2022441721,
+    "sha256": "e63e5b3b075489fe3815dadd893e7b7d9b9d308b8a1e2383650890476cae9169"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/stitchesdark_d.vtf",
+    "size": 2796424,
+    "crc": 1854775970,
+    "sha256": "bd65a12e0d47bca392732fde86a306d6522126e428922016b023912420f943b3"
+  },
+  {
+    "path": "models/gentoi/anologhorror/monster rat.dx90.vtx",
+    "size": 618230,
+    "crc": 3947785083,
+    "sha256": "fbaaeba68b5213096bf4b8d9805a0d7481e645273a2f2f394959fada433fd8aa"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/teeth_d.vtf",
+    "size": 2796424,
+    "crc": 901094068,
+    "sha256": "7daaeeb72277cfaf10bbb891897ead6b056d78f4c9c1c43ff6fbaddcd261143f"
+  },
+  {
+    "path": "models/gentoi/anologhorror/monster rat.phy",
+    "size": 295285,
+    "crc": 2758458223,
+    "sha256": "18588cf5ba3e7b233d20bb2137ccf54425e172187fcc4199a24c66c20ebe1935"
+  },
+  {
+    "path": "models/gentoi/anologhorror/monster rat.mdl",
+    "size": 329724,
+    "crc": 409700888,
+    "sha256": "4acbce39db10e6408e6f00a6ae20168caf43a4b489b4819a60f5fd781d6f3689"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/teethdark_d.vtf",
+    "size": 2796424,
+    "crc": 1417961680,
+    "sha256": "08de0f1b7b4cca6af371b89ec5f567179077d6953672139d39f265d24843b7ea"
+  },
+  {
+    "path": "sound/gentoi/rat/attack dodge.wav",
+    "size": 56220,
+    "crc": 3300191127,
+    "sha256": "21da725dbf2de33dbb0f074cfb2005f4857ccc4842969db978b9ad934fa7f178"
+  },
+  {
+    "path": "sound/gentoi/rat/attack twitch.wav",
+    "size": 236288,
+    "crc": 4226671465,
+    "sha256": "c0a2f350693d027ef285f83746e1c9448241504d6991bacf806966b18dc61818"
+  },
+  {
+    "path": "sound/gentoi/rat/footstep1.wav",
+    "size": 221262,
+    "crc": 402120640,
+    "sha256": "0f2d19b23b946c757c58c3072b2ef2d75aba75793345658b5f1e548a5e9d5d0f"
+  },
+  {
+    "path": "sound/gentoi/rat/crawl under bed.wav",
+    "size": 581688,
+    "crc": 1849007803,
+    "sha256": "eb790a48a2ba3529ed6ca3b93dc1c4d2330ad062205aeb79f19a0b7718194f20"
+  },
+  {
+    "path": "sound/gentoi/rat/attack begin.wav",
+    "size": 1773012,
+    "crc": 614340304,
+    "sha256": "f161e94c0d8446efb841228c983503d3166ae82781750121ec8aff5388b36315"
+  },
+  {
+    "path": "sound/gentoi/rat/footstep2.wav",
+    "size": 221262,
+    "crc": 1948081867,
+    "sha256": "c264f9743f59dd51807fff199e8e729eb1431223f93faf421798fcf178559750"
+  },
+  {
+    "path": "sound/gentoi/rat/footstep3.wav",
+    "size": 221262,
+    "crc": 3327274690,
+    "sha256": "bd2bf825b13a7eb3bcb17e73f0dc9b5c2a43a14f47d23f9c991a29e454e38406"
+  },
+  {
+    "path": "sound/gentoi/rat/helphudexit.wav",
+    "size": 164468,
+    "crc": 200121417,
+    "sha256": "7d63c4e2d859e2301e409f3c979ae84f2cf64305fb41f463d86c4c884ef56f79"
+  },
+  {
+    "path": "sound/gentoi/rat/helphudopen.wav",
+    "size": 253660,
+    "crc": 2335702413,
+    "sha256": "aa361c26408f1cc131b6f0d8d8253a01b1cb348dbbe403049fffbfad1e10978f"
+  },
+  {
+    "path": "sound/gentoi/rat/jumpscare 01 noentry.wav",
+    "size": 282284,
+    "crc": 2112782389,
+    "sha256": "4dd45ea01ab5b999071e948b638f3f8c85a3c828adda6fafe46c247e3cde696f"
+  },
+  {
+    "path": "sound/gentoi/rat/jumpscare 01.wav",
+    "size": 367520,
+    "crc": 3111911588,
+    "sha256": "77676d0a0c28c4cd238b0ad3f60f0824772d111265002efcc1ad253b824536bc"
+  },
+  {
+    "path": "sound/gentoi/rat/jumpscaresound.wav",
+    "size": 360526,
+    "crc": 1660316745,
+    "sha256": "fb73ca6e658fd6ad3dbfb278ed6533de65aa15d51f08a9a2ddf450c25238738d"
+  },
+  {
+    "path": "sound/gentoi/rat/knocking calm.wav",
+    "size": 350252,
+    "crc": 2174624172,
+    "sha256": "d5a06e14bf693a04c3f78509bea4f6aab3d15157644b5da6073e6f4c57f38498"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/stitches_d.vtf",
+    "size": 2796424,
+    "crc": 2327931765,
+    "sha256": "e16fe56cb3062ada4a2795a56de24b55a58714e0c9f8a8276666b7ed9061be6f"
+  },
+  {
+    "path": "models/gentoi/anologhorror/monster rat.vvd",
+    "size": 2288832,
+    "crc": 2098265626,
+    "sha256": "2f9a4977ff548b4ef8d2c59f67812a4357d870a9ba03231e561003e5df02c292"
+  },
+  {
+    "path": "sound/gentoi/rat/knocking single.wav",
+    "size": 127312,
+    "crc": 3634479,
+    "sha256": "a4fca1dffb14a307e36119287b57cf958c9a10153174c7076cb44813a918df6f"
+  },
+  {
+    "path": "sound/gentoi/rat/run1.wav",
+    "size": 53326,
+    "crc": 460486630,
+    "sha256": "81f1600a6add386734d58f71411bfafdfb392bd281eed1e983506973ae3f615c"
+  },
+  {
+    "path": "sound/gentoi/rat/run3.wav",
+    "size": 49230,
+    "crc": 17569181,
+    "sha256": "9429e64906b3b1eb6986c13d7b23dbcfef46e8bab0ad0208471aa3aac1dfcb48"
+  },
+  {
+    "path": "sound/gentoi/rat/monster rat kill (1).wav",
+    "size": 880672,
+    "crc": 3455568510,
+    "sha256": "967a230e39384540a52c929dc36ff53f9b417865073aeb44868146c9389ebe13"
+  },
+  {
+    "path": "sound/gentoi/rat/run4.wav",
+    "size": 49230,
+    "crc": 3126432714,
+    "sha256": "a9fcadc7449e665ce66bacd3b5f8a24e40c0c854349b105c427f1348bc7fbe77"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/tail_n.vtf",
+    "size": 5592640,
+    "crc": 3766105833,
+    "sha256": "f7414404bff0f742e30c7c495615488e41b3ff62a9bc1e744755896659782957"
+  },
+  {
+    "path": "sound/gentoi/rat/run5.wav",
+    "size": 49230,
+    "crc": 3639853033,
+    "sha256": "9b0908ebf058a78e457c8fd04190ddce918c53f168678bc1ed70bb3c5ad2bcc0"
+  },
+  {
+    "path": "sound/gentoi/rat/run6.wav",
+    "size": 49230,
+    "crc": 635152602,
+    "sha256": "899885d1ffba4df76655442e3b89086973ddc035fee4fd7a93cc70e4cfc7acb9"
+  },
+  {
+    "path": "sound/gentoi/rat/run7.wav",
+    "size": 45134,
+    "crc": 3703870800,
+    "sha256": "1f353120546ee084c0a017edb6c8ae3792102d1900a3c4037b923f233f3970aa"
+  },
+  {
+    "path": "sound/gentoi/rat/knocking single calm.wav",
+    "size": 116780,
+    "crc": 2568249244,
+    "sha256": "94e8ea38daf3022ac4d8d73cfe3cdb793afb37e0498a53c699c74f3ec3fab9ae"
+  },
+  {
+    "path": "sound/gentoi/rat/step3.wav",
+    "size": 139342,
+    "crc": 3586347770,
+    "sha256": "26b813ebace06c5983778ea9039483c32f120c8cbac60611cf6f55a72410e696"
+  },
+  {
+    "path": "sound/gentoi/rat/step4.wav",
+    "size": 90190,
+    "crc": 1671905278,
+    "sha256": "05bee9485c9dc9c01662c0d761e9db4f89ac96d7c112e8fe442bf83abc5bd6b8"
+  },
+  {
+    "path": "sound/gentoi/rat/step5.wav",
+    "size": 303182,
+    "crc": 1738515340,
+    "sha256": "ba74ee314907e32af3e0521452e3446465bd6ac8cca02df35b64bc562fd046c8"
+  },
+  {
+    "path": "sound/gentoi/rat/shadow rat ping.wav",
+    "size": 1875456,
+    "crc": 438277568,
+    "sha256": "9095d89d8936eae19b90be7db4ea0811c6f7b95b1bce8a9a1699690f61d30700"
+  },
+  {
+    "path": "sound/gentoi/rat/vent1.wav",
+    "size": 143438,
+    "crc": 2590890436,
+    "sha256": "faa35446953cd3adde32609f4c8b59e723c19700ba48096f3236cff8a2c7e334"
+  },
+  {
+    "path": "sound/gentoi/rat/vent2.wav",
+    "size": 118862,
+    "crc": 2645766793,
+    "sha256": "5ceffa357ceacd7e25b0faf46d4ce29bc6bde2decc1e98c74352939d34f9987a"
+  },
+  {
+    "path": "sound/gentoi/rat/vent3.wav",
+    "size": 102478,
+    "crc": 197328125,
+    "sha256": "09955649060c1b52ea42607d8769545070c3d42a0fc9bf8f62f0e470d19db9b3"
+  },
+  {
+    "path": "sound/gentoi/rat/thunder 01.wav",
+    "size": 787140,
+    "crc": 2396072461,
+    "sha256": "83b2c03845a48d78ef52b127c95647a029ca9e3c5a6e543dde0a8abcb1bd4ffe"
+  },
+  {
+    "path": "sound/gentoi/rat/run2.wav",
+    "size": 49230,
+    "crc": 1324892422,
+    "sha256": "790bf68d83b361c57580adda322c6b3be2ecc2fbf89c7237e43130e23ed8349d"
+  },
+  {
+    "path": "sound/gentoi/rat/step2.wav",
+    "size": 147534,
+    "crc": 1306176067,
+    "sha256": "a6b74abdc13522747822dd0dfc141ad36e76cd2023338e3fe2c9bf80a35743da"
+  },
+  {
+    "path": "sound/gentoi/rat/vent4.wav",
+    "size": 106574,
+    "crc": 67223774,
+    "sha256": "18a1d4813341f5d148a45c70215e207b1532bb64b5c41af47fbbbd2f4d427721"
+  },
+  {
+    "path": "sound/gentoi/rat/vent5.wav",
+    "size": 139342,
+    "crc": 2404522525,
+    "sha256": "bcf2c925d23c5883be754b068adac49feea779c2a10079db146412703837c4c0"
+  },
+  {
+    "path": "sound/gentoi/rat/knocking aggressive.wav",
+    "size": 195084,
+    "crc": 702473042,
+    "sha256": "2431d4d1ce912146b4e5a21fac2ce5a431db24c8c7d714d16f244c2f7d47ce0b"
+  },
+  {
+    "path": "sound/gentoi/rat/step1.wav",
+    "size": 131150,
+    "crc": 3660593513,
+    "sha256": "1d5c09c659a8a8aa9bc4444f82eb0554feea9978e4c5943eca9285f8c6608f62"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/teeth_n.vtf",
+    "size": 5592640,
+    "crc": 725817301,
+    "sha256": "ba810bddaf8e88ff8e8490cf0cd31c982f52d57af35a475ee9dbd206b5f8a72c"
+  },
+  {
+    "path": "materials/models/gentoi/anologhorror/monster rat/teeth_s.vtf",
+    "size": 2796424,
+    "crc": 3992979159,
+    "sha256": "3deefa0f6b50a7559816b2f7cd749e645a063196b32674b0dbc82e4980737388"
+  },
+  {
+    "path": "sound/gentoi/rat/attack ambiance.wav",
+    "size": 7499288,
+    "crc": 3412996833,
+    "sha256": "e2bd1dd301f19fca26420e6844cf9ecde03b9ec7f70e8d2af9cf8a1d3f9f73d7"
+  }
+]
