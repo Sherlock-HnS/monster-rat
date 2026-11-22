@@ -223,6 +223,13 @@ local function racheljackietien_jumpscare(ply, ent, duration, customanimstuff, s
             end
         end
 
+        if SherlockHNS and IsValid(jumpscare_entity) and jumpscare_entity:IsPlayer() then
+            return pk_pills.playHNSJumpscare(ply, ent, jumpscare_entity, duration, {
+                camera = "OM_gentoi_rat_jumpscarecam",
+                onStart = customanimstuff,
+            })
+        end
+
         if jumpscare_entity ~= nil then
             
             ent.JuumpscareStart = CurTime()
@@ -958,10 +965,7 @@ pk_pills.register('pill_gentoi_fnac_rat', {
 
 
             if IsValid(ply) and IsValid(ent) then
-                ply:SetWalkSpeed(speed["walk"])
-                ply:SetRunSpeed(speed["run"])
-                ply:SetCrouchedWalkSpeed(speed["ducked"])
-                ply:SetJumpPower(speed["jumppower"])
+                pk_pills.setCostumeMoveSpeed(ent, speed.walk, speed.run, speed.ducked, speed.jumppower)
             end
 
             local puppet = ent:GetPuppet()
@@ -1022,6 +1026,7 @@ pk_pills.register('pill_gentoi_fnac_rat', {
                         local closest_dist = math.huge
 
                         for _, v in ipairs(starelist) do
+                            if SERVER and SherlockHNS and v:IsPlayer() and not SherlockHNS.CanTarget(v, ply) then continue end
                             if v:GetNWFloat("gent_rat_hudpaint_border_shadow") > CurTime() or v:GetNWFloat("gent_rat_hudpaint_border_normal") > CurTime() then
                                 continue
                             end
@@ -1302,6 +1307,7 @@ pk_pills.register('pill_gentoi_fnac_rat', {
 
                         local dur = GetConVar("GentoiPills_rat_SneakUp_cddetected"):GetFloat()
                         ent:SetNW2Float("rat_invis_ability_cd", CurTime()+ dur)
+                        pk_pills.setHNSCooldown(ent, "sneak", ent:GetNW2Float("rat_invis_ability_cd") - CurTime())
                         ent:SetNW2Float("rat_invis_ability_cd_dur", dur)
 
                         ent:SetNWFloat("StunnedInvis", CurTime()+GetConVar("GentoiPills_rat_SneakUp_minigamefinishedstun"):GetFloat())
@@ -1509,6 +1515,7 @@ pk_pills.register('pill_gentoi_fnac_rat', {
                         ent:SetNWBool("Rat_gentoi_invis", true)
                     end
                     ent:SetNW2Float("rat_invis_ability_cd", CurTime()+ dur)
+                    pk_pills.setHNSCooldown(ent, "sneak", ent:GetNW2Float("rat_invis_ability_cd") - CurTime())
                     ent:SetNW2Float("rat_invis_ability_cd_dur", dur)
                 end
             end
@@ -1549,7 +1556,7 @@ pk_pills.register('pill_gentoi_fnac_rat', {
 
             local anim = ent:GetPuppet():LookupSequence("Kill")
             local dur = ent:GetPuppet():SequenceDuration(anim)
-            racheljackietien_jumpscare(
+            return racheljackietien_jumpscare(
                 ply,
                 ent,
                 dur,
@@ -1584,4 +1591,16 @@ pk_pills.register('pill_gentoi_fnac_rat', {
         
     jump = function(ply, ent)
     end
-} )
+}, function(form)
+    -- The legacy damage branches are for Sandbox and NPCs.
+    form.hnsKillAPI = true
+    form.hnsAbilities = {
+        { id = "attack", name = "Ataque", key = IN_ATTACK, OnUse = form.attack.func },
+    }
+    form.attack, form.attack2, form.reload = nil, nil, nil
+    pk_pills.bindHNSButtons(form, "noodles_gentoi_rat_keybinds_down", {
+        { id = "sneak", name = "Emboscada", button = KEY_1, keyLabel = "1" },
+        { id = "shiftlock", name = "Travar corrida", button = KEY_R, keyLabel = "R" },
+        { id = "light", name = "Lanterna", button = KEY_F, keyLabel = "F" },
+    })
+end )

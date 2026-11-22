@@ -823,6 +823,7 @@ else
     end)
 
     hook.Add("HUDPaint", "gent_rat_hudpaint_fnac", function()
+        if SherlockHNS then return end
         local ply = LocalPlayer()
         if not IsValid(ply) then return end
         if jumpscareenabled then
