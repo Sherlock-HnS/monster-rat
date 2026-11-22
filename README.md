@@ -1,4 +1,4 @@
-[PILL PACK] Monster Rat
+# [PILL PACK] Monster Rat
 
 ![Workshop preview](workshop-preview.jpg)
 
