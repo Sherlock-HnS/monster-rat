@@ -206,11 +206,21 @@ local function racheljackietien_jumpscare(ply, ent, duration, customanimstuff, s
         if ent.IsInJumpscareCooldown >= CurTime() then return end
 
         local jumpscare_entity = nil
-        if specificent then jumpscare_entity = specificent else
+        local range = 100
+        local targetOrigin = ent:LocalToWorld(Vector(0, 0, 50))
 
-            local range = 100
-
-            for _, ent2 in pairs(ents.FindInSphere(ent:LocalToWorld(Vector(0, 0, 50)), range)) do
+        if SherlockHNS then
+            if IsValid(specificent) then
+                jumpscare_entity = SherlockHNS.FindVictim(ply, targetOrigin, range, {
+                    filter = function(v) return v == specificent end,
+                })
+            else
+                jumpscare_entity = SherlockHNS.FindVictim(ply, targetOrigin, range)
+            end
+        elseif specificent then
+            jumpscare_entity = specificent
+        else
+            for _, ent2 in pairs(ents.FindInSphere(targetOrigin, range)) do
                 if (ent2:IsPlayer() or ent2:IsNextBot() or ent2:IsNPC()) and ent2:Health() >= 0.1 then
                     if ent2 == ply then continue end
                     if ent2:IsPlayer() and ent2:Team() == TEAM_SPECTATOR then continue end
