@@ -1478,6 +1478,7 @@ pk_pills.register('pill_gentoi_fnac_rat', {
 
                         for k, v in pairs(ents.FindInSphere(ent:LocalToWorld(Vector(0, 0, 50)), 450)) do
                             if v:IsPlayer() then
+                                if SherlockHNS and not SherlockHNS.CanTarget(v, ply) then continue end
                                 if v == ent or v == ply then continue end
 
                                 if (v:IsPlayer() and v:Team() ~= TEAM_SPECTATOR) or ((v:IsNPC() or v:IsNextBot()) and v:Health() > 0) then
